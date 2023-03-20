@@ -1,10 +1,11 @@
-let urlApi = "https://mindhub-xj03.onrender.com/api/amazing";
+
 let queryString = location.search
 let params = new URLSearchParams(queryString).get("_id")
 
 
 async function printDetails() {
     try {
+        let urlApi = "https://mindhub-xj03.onrender.com/api/amazing";
         let fetchResponse = await fetch(urlApi);
         let response = await fetchResponse.json();
         let arrayEventos = response.events;
@@ -20,7 +21,8 @@ async function printDetails() {
         if (!eventId) {
             document.getElementById("idContainer").innerHTML = "El evento no se pudo encontrar.";
             return;
-            }else{let card = ` 
+            }else{
+            let card = ` 
             <div class="card" style="margin: 2rem">
                     <img src="${eventId.image}" alt="${eventId.name}"/>  
                 <div class="details">
@@ -28,8 +30,7 @@ async function printDetails() {
                     <h1>${eventId.name}</h1>
                     <p>${eventId.description}</p>
                     <h3>Date: ${eventId.date} - Place: ${eventId.place}</h3>
-                    <h4>Capacity:${eventId.capacity}</h4>
-                    <h4>Price: $${eventId.price}</h4>
+                    <h4>Capacity: ${eventId.capacity}   -   Price: $${eventId.price}</h4>
                     </div>
                 </div>
             </div>

@@ -120,6 +120,8 @@ button{
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #boxCard{
@@ -133,16 +135,16 @@ button{
 }
 
 /* CARD */
-<<<<<<< Updated upstream
-.conteiner-flex-3{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row ;
+
+.card{
+    border: solid 0.5rem rgba(0,0,0,0.86);
 }
-=======
->>>>>>> Stashed changes
+
+.card h1, h2 , h3, h4 , p{
+    text-align: center;
+    margin: 0.8rem;
+}
+
 
 .home-main{
     width: 26rem;
@@ -247,12 +249,13 @@ button{
 
 .table-stats{
     border: 1px solid lightgray;
-    padding: 2rem;
+    font-size: 1.2rem;
+    padding: 2.5rem;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
     border-radius: 1rem;
 }
 
@@ -501,6 +504,10 @@ button{
 
 
 @media (max-width: 560px){
+    header {
+        height: 6rem;
+        background-color: #212529;
+    }
 
     nav{
         margin-right: 0;
@@ -539,9 +546,6 @@ button{
     font-size: 1.5rem;
     }
 
-    .conteiner-flex{
-        width: 80%;
-    }
 
     #formHome{
         display: inline-block;
@@ -551,29 +555,13 @@ button{
         width: 80%;
     }
 
-    .formHome{
-        width: 80%;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .formHome form{
-        margin-left: 0.2rem;
-        position: absolute;
-    }
-
-    .formHome form input, label{
-        font-size: 0.5rem;
-        padding: 0.1rem;
-        text-align: center;
-    }
-
-    .input-group {
-        position: absolute;
-        padding: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+    .formulario form {
+        display: flex;
+        width: 15rem;
+        flex-direction: row;
+        align-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .home-main {
@@ -599,5 +587,22 @@ button{
         width: 50%;
         font-size: 1rem;
     }
+
+    .table-stats{
+        border: 1px solid lightgray;
+        font-size: 0.8rem;
+        padding: 1rem;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: rem;
+        margin-top: 2rem;
+        border-radius: 0.5rem;
+    }
+
+    
+element.style {
+    height: 20rem;
+}
 
 }
