@@ -85,38 +85,55 @@ nav ul li:hover{
 
 /*  MAIN  */
 
-.formHome{
-    margin-top: 1rem;
-    width: 50%;
-    margin-bottom: 1rem;
-
-}
-
-.formHome form{
+.formulario {
+    width: 100%;
     display: flex;
-    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.formHome form input, label{
-    font-size: 1.3rem;
-    padding: 1rem;
-    object-position: center;
+.formulario form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 30rem;
+}
+.formulario2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    width: 5rem;
+    height: 1.7rem;
+    border-radius: 0.2rem;
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
-.input-group{
+#boxCard{
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 1rem;
-    width: 30rem;
-    object-position: center;
-    margin-left: 5rem;
 }
 
-.input-group button{
-    height: 2.4rem;
+#boxCard button{
+    height: 2rem;
 }
 
 /* CARD */
+<<<<<<< Updated upstream
 .conteiner-flex-3{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -124,10 +141,10 @@ nav ul li:hover{
     display: flex;
     flex-direction: row ;
 }
+=======
+>>>>>>> Stashed changes
 
 .home-main{
-    margin-left: auto;
-    margin-right: auto;
     width: 26rem;
     padding: 1rem;
 }
